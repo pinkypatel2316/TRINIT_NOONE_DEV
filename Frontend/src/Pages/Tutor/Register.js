@@ -369,8 +369,8 @@ function TutorRegister() {
                 textShadow: "5px 5px 10px orange",
               }}
             >
-              <label style={{ fontSize: 67 }}>KNOWLEDGE LAND </label> <br />{" "}
-              VIRTUAL LEARNING PLATFORM
+              <label style={{ fontSize: 67 }}>LinguaConnect</label> <br />{" "}
+              Explore, Learn, Connect
             </h2>
           </div>
         </div>

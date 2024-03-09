@@ -57,11 +57,8 @@ function Login() {
               JSON.stringify(res.data.data.timing)
             );
           }
-
-          // We are displaying success message using React Toastify
           toast.success("Login successful!");
-
-          navigate("/Addcts");
+          navigate("/dashboard");
         } else {
           alert(res.data.msg);
         }
@@ -213,7 +210,7 @@ function Login() {
             <br />
             <br />
             <a
-              onClick={() => navigate("/Signupteacher")}
+              onClick={() => navigate("/tutorregister")}
               style={{
                 color: "black",
                 textDecoration: "underline",
@@ -224,7 +221,7 @@ function Login() {
             </a>
             <br />
             <a
-              onClick={() => navigate("/Signupstudent")}
+              onClick={() => navigate("/studentregister")}
               style={{
                 color: "black",
                 textDecoration: "underline",
@@ -255,8 +252,8 @@ function Login() {
               textShadow: "5px 5px 10px orange",
             }}
           >
-            <label style={{ fontSize: 67 }}>KNOWLEDGE LAND </label> <br />{" "}
-            VIRTUAL LEARNING PLATFORM
+            <label style={{ fontSize: 67 }}>LinguaConnect</label> <br />
+            Explore, Learn, Connect
           </h2>
         </div>
       </div>

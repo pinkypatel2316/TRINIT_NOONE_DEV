@@ -4,9 +4,8 @@ import Login from "./Pages/Login";
 import Sidebar from "./Pages/Sidebar";
 import TutorRegister from "./Pages/Tutor/Register";
 import StudentRegister from "./Pages/Student/Register";
-
 import Header from "./Pages/Header";
-import Addcts from "./Pages/Addcts";
+import Dashboard from "./Pages/Dashboard";
 import Newsandannc from "./Pages/Newsandannc";
 import Allcourses from "./Pages/Allcourses";
 import Upcomeing from "./Pages/Upcomeing";
@@ -22,7 +21,7 @@ function App() {
         <Route path="/studentregister" element={<StudentRegister />}></Route>
         <Route path="/Sidebar" element={<Sidebar />}></Route>
         <Route path="/Header" element={<Header />}></Route>
-        <Route path="/Addcts" element={<Addcts />}></Route>
+        <Route path="/dashboard" element={<Dashboard />}></Route>
         <Route path="/Newsandannc" element={<Newsandannc />}></Route>
         <Route path="/Allcourses" element={<Allcourses />}></Route>
         <Route path="/Upcomeing" element={<Upcomeing />}></Route>
