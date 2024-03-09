@@ -32,11 +32,10 @@ function Login() {
           const fn2 = res.data.data.password;
           const type = res.data.data.type;
           const id = res.data.data._id;
-          const timing = res.data.data.timing;
+          // const timing = res.data.data.timing;
           localStorage.setItem("username", fn);
           localStorage.setItem("useremail", fn1);
           localStorage.setItem("userpassword", fn2);
-          localStorage.setItem("type", type);
           localStorage.setItem("userId", id);
           localStorage.setItem(
             "userpic",
@@ -44,7 +43,7 @@ function Login() {
               ? res.data.data.profilePhoto
               : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTbH_P7t59HyCjbVqVBSblusPdVCz7Phn1sjA236kzMg&usqp=CAU&ec=48600112"
           );
-          localStorage.setItem("timing", JSON.stringify(timing));
+          // localStorage.setItem("timing", JSON.stringify(timing));
           if (type === "student") {
             localStorage.setItem(
               "stdSkills",
@@ -52,10 +51,10 @@ function Login() {
             );
           } else if (type === "teacher") {
             localStorage.setItem("teacherSpec", res.data.data.specialization);
-            localStorage.setItem(
-              "teacherTime",
-              JSON.stringify(res.data.data.timing)
-            );
+            // localStorage.setItem(
+            //   "teacherTime",
+            //   JSON.stringify(res.data.data.timing)
+            // );
           }
           toast.success("Login successful!");
           navigate("/dashboard");

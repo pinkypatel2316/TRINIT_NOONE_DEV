@@ -18,6 +18,7 @@ router.get("/", async (req, res) => {
 router.get("/:id", async (req, res) => {
   try {
     const tutor = await Tutor.findById(req.params.id);
+    tutor.password = undefined;
     res.status(200).json({
       data: tutor,
     });

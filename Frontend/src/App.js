@@ -7,7 +7,7 @@ import StudentRegister from "./Pages/Student/Register";
 import Header from "./Pages/Header";
 import Dashboard from "./Pages/Dashboard";
 import Newsandannc from "./Pages/Newsandannc";
-import Allcourses from "./Pages/Allcourses";
+import AddTimeslot from "./Pages/AddTimeslot";
 import Upcomeing from "./Pages/Upcomeing";
 import Viewcourses from "./Pages/Viewcourses";
 import Setting from "./Pages/Setting";
@@ -23,7 +23,7 @@ function App() {
         <Route path="/Header" element={<Header />}></Route>
         <Route path="/dashboard" element={<Dashboard />}></Route>
         <Route path="/Newsandannc" element={<Newsandannc />}></Route>
-        <Route path="/Allcourses" element={<Allcourses />}></Route>
+        <Route path="/tutor/addtimeslot" element={<AddTimeslot />}></Route>
         <Route path="/Upcomeing" element={<Upcomeing />}></Route>
         <Route path="/Viewcourses" element={<Viewcourses />}></Route>
         <Route path="/Setting" element={<Setting />}></Route>
