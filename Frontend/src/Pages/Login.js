@@ -9,6 +9,7 @@ function Login() {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [type, setType] = useState("Student");
   const [validator, setValidator] = useState(false);
 
   const logincheck = () => {
@@ -22,7 +23,8 @@ function Login() {
         email: email,
         password: password,
       };
-      axios.post(baseUrl + "student/login", item).then((res) => {
+      const suburl = type == "Tutor" ? "tutor/login" : "student/login";
+      axios.post(baseUrl + suburl, item).then((res) => {
         if (res.data.msg === "ok") {
           localStorage.setItem("check", "okk");
           const fn = res.data.data.name;
@@ -163,7 +165,28 @@ function Login() {
                 }}
               />
             </div>
-            <br /> <br />
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "flex-start",
+                marginLeft: "5%",
+                height: "70px",
+                justifyContent: "space-evenly",
+              }}
+            >
+              <select
+                onChange={(e) => setType(e.target.value)}
+                style={{
+                  width: "30%",
+                  height: 40,
+                  border: "1px solid grey",
+                }}
+              >
+                <option value={"Student"}>Student</option>
+                <option value={"Tutor"}>Tutor</option>
+              </select>
+            </div>
             <div
               style={{
                 display: "flex",
