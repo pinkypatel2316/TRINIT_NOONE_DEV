@@ -1,5 +1,7 @@
 adding a video link to readme
 
 
-Uploading bandicam 2024-03-10 07-26-00-593.mp4…
+
+
+https://github.com/pinkypatel2316/TRINIT_NOONE_DEV/assets/115884726/bb460ebd-ec92-4ab7-9ecf-427a626ea107
 
